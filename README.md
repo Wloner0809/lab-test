@@ -1,6 +1,6 @@
 # lab-test
 
-> Reproduce BigRec with Qwen1.5-0.5 model and Amazon CD dataset. Here, we choose SASRec as a baseline.
+> Reproduce BigRec with Qwen1.5-0.5B model and Amazon CD dataset. Here, we choose SASRec as a baseline.
 
 ## BigRec
 
