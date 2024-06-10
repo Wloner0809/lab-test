@@ -29,3 +29,9 @@ If we let LLM return 4 items and choose the most similar one, we can get the res
 | :----------------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 |         NG         |   0.0426   |   0.0522   |   0.0530   |   0.0540   |   0.0557   |
 |         HR         |   0.0426   |   0.0584   |   0.0604   |   0.0634   |   0.07    |
+
+## Coding Time
+
+I have tried my best(
+
+![](assets/coding_time.png)
