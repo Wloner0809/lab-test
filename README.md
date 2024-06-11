@@ -10,7 +10,11 @@
 
 [Repo link](https://github.com/pmixer/SASRec.pytorch)
 
-## Result
+## Evaluate
+
+At beginning, I adopted the same evaluation method as [BigRec repo](https://github.com/SAI990323/Grounding4Rec), so I got the result below.
+
+### Result_original
 
 The Result of current sota checkpoint:
 
@@ -23,12 +27,23 @@ The Result of current sota checkpoint:
 |      Qwen_HR       |   0.027    |   0.0364   |   0.0372   |   0.0386   |   0.041    |
 | Qwen_popularity_HR | **0.0272** | **0.0378** |   0.0402   |   0.0434   |   0.0498   |
 
-If we let LLM return 4 items and choose the most similar one, we can get the results below(This method may be wrong):
+If we let LLM return 4 items and choose the most similar one, we can get the results below(**This method may be wrong**):
 
 |       Metric       |     @1     |     @3     |     @5     |    @10     |    @20     |
 | :----------------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 |         NG         |   0.0426   |   0.0522   |   0.0530   |   0.0540   |   0.0557   |
 |         HR         |   0.0426   |   0.0584   |   0.0604   |   0.0634   |   0.07    |
+
+However, after I adopted the same method as [GenRec repo](https://github.com/rutgerswiselab/GenRec/tree/main), I got the result below. And this result corresponds with the reference result.
+
+### Result_now
+
+The Result of current sota checkpoint:
+
+|       Metric       |     @1     |     @3     |     @5     |    @10     |    @20     |
+| :----------------: | :--------: | :--------: | :--------: | :--------: | :--------: |
+|         NG         |   0.0362   |   0.0432   |   0.0453   |   0.0485   |   0.0519   |
+|         HR         |   0.0362   |   0.0484   |   0.0536   |   0.0634   |   0.077    |
 
 ## Coding Time
 
